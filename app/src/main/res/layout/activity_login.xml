@@ -3,19 +3,28 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@color/teal_200"
+    android:background="@drawable/ic_background2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".view.auth.LoginActivity">
 
     <androidx.appcompat.widget.LinearLayoutCompat
-        android:layout_width="355dp"
-        android:layout_height="343dp"
+        android:layout_width="356dp"
+        android:layout_height="381dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.247">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:gravity="center"
+            android:text="login"
+            android:textSize="50dp"
+            android:textStyle="italic" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
@@ -23,11 +32,11 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/tvUsername"
-                android:hint="Enter Username"
-                android:maxLines="1"
-                android:background="@color/white"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:background="#80000000"
+                android:hint="Enter Username"
+                android:maxLines="1" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -37,11 +46,11 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/tvPassword"
-                android:hint="Enter Password"
-                android:maxLines="1"
-                android:background="@color/white"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:background="#80000000"
+                android:hint="Enter Password"
+                android:maxLines="1" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -55,17 +64,16 @@
         <!--간격 높이 10 고정-->
         <View
             android:layout_width="match_parent"
-            android:layout_height="10dp"/>
+            android:layout_height="10dp" />
 
         <TextView
-            android:gravity="center"
-            android:textColor="@color/purple_500"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="회원가입 하러가기" />
+            android:gravity="center"
+            android:text="회원가입 하러가기"
+            android:textColor="@color/purple_500" />
 
     </androidx.appcompat.widget.LinearLayoutCompat>
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

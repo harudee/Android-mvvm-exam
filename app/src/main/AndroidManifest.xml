@@ -18,9 +18,9 @@
         <activity android:name=".view.auth.JoinActivity" />
         <activity android:name=".view.post.PostWriteActivity"/>
 
-        <activity android:name=".view.auth.LoginActivity" />
+        <activity android:name=".view.post.PostListActivity" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".view.post.PostListActivity" >
+        <activity android:name=".view.auth.LoginActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
